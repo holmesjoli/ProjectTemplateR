@@ -1,0 +1,24 @@
+Package: ProjectTemplateR
+Type: Package
+Title: Project Template R
+Version: 0.0.1
+Authors@R: person("Joli", "Holmes", email = "holmesjoli@gmail.com", role = c("aut", "cre"))
+Maintainer: Joli Holmes <holmesjoli@gmail.com>
+Description: Contains basic utilty functions.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Depends: 
+    R (>= 3.5.2)
+Imports:
+    packrat,
+    optparse,
+    usethis
+Suggests:
+    roxygen2 (>= 6.1.1),
+    testthat (>= 2.0.1),
+    knitr,
+    rmarkdown
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+
