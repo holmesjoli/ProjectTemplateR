@@ -17,6 +17,7 @@ if (!is.null(opts[["project_name"]])) {
     usethis::use_rcpp()
     usethis::use_readme_md()
     usethis::use_testthat()
+    usethis::use_travis()
     usethis::use_git()
 
 } else {
