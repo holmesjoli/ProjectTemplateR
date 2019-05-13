@@ -1,11 +1,3 @@
-proj_root <- file.path(normalizePath(dirname(".")), "ProjectTemplateR")
-
-source(file.path(proj_root, "R", "helper_functions.R"))
-source(file.path(proj_root, "R", "cli_args.R"))
-
-pkgs <- c("usethis", "packrat", "optparse")
-install_pkg_list(pkgs)
- 
 opts <- parseArguments()
 
 if (!is.null(opts[["project_name"]])) {
@@ -19,9 +11,9 @@ if (!is.null(opts[["project_name"]])) {
     usethis::use_testthat()
     usethis::use_travis()
     usethis::use_git()
-
+    utilsR::create_dirs("R", "man")
+    
 } else {
     stop("Must specify project name")
 }
 
-utilsR::create_dirs("R", "man")
