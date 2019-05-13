@@ -1,6 +1,5 @@
 Package: ProjectTemplateR
 Type: Package
-<<<<<<< HEAD
 Title: Project Template R
 Version: 0.0.1
 Authors@R: person("Joli", "Holmes", email = "holmesjoli@gmail.com", role = c("aut", "cre"))
